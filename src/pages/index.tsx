@@ -126,23 +126,28 @@ const IndexPage = () => {
       </Box>
       <Box my={[4, 10]} id="line-up">
         <Container maxW="container.sm">
-          <Text as="h2" fontSize={["2xl", "4xl"]} fontWeight="bold">
+          <Text as="h2" fontSize={["2xl", "4xl"]} fontWeight="bold" mb={4}>
             Line-up
           </Text>
-          <Text>Typically:</Text>
-          <UnorderedList mb={4}>
-            <ListItem>4 trumpets</ListItem>
-            <ListItem> 2 trombones</ListItem>
-            <ListItem> 4 saxes</ListItem>
-            <ListItem> rhythm section (bass, guitar, drums, keyboard)</ListItem>
-            <ListItem> vocals (female)</ListItem>
-          </UnorderedList>
           <StaticImage
             layout="fullWidth"
             alt="GLBB whole band"
             src="../images/img-bg-2.png"
             formats={["auto", "webp", "avif"]}
           />
+          <Text mt={4} mb={4} fontSize="lg" fontWeight="bold">
+            Typically the line-up of the GLBB includes:
+          </Text>
+          <UnorderedList mb={4} display="grid" gridTemplateColumns="1fr 1fr">
+            <ListItem fontSize="lg">🎺 4x trumpets</ListItem>
+            <ListItem fontSize="lg">🎸 1x bass guitar</ListItem>
+            <ListItem fontSize="lg">🎺 2x trombones</ListItem>
+            <ListItem fontSize="lg">🎸 1x electric guitar</ListItem>
+            <ListItem fontSize="lg">🎷 4x saxes</ListItem>
+            <ListItem fontSize="lg">🥁 1x drums</ListItem>
+            <ListItem fontSize="lg">🎹 1x keyboard</ListItem>
+            <ListItem fontSize="lg">🎤 1x vocals (female)</ListItem>
+          </UnorderedList>
         </Container>
       </Box>
       <Box my={[4, 10]} id="arrangers-composers">
@@ -179,12 +184,16 @@ const IndexPage = () => {
           <Text as="h2" fontSize={["2xl", "4xl"]} fontWeight="bold">
             Contact
           </Text>
-          <Text as="p">Contact Matt West</Text>
-          <Text as="p">
-            To discuss whether the Great Lake Big Band will suit your event.
+          <Text as="p" mb={4}>
+            Contact Matt West to discuss whether the Great Lake Big Band will
+            suit your event.
           </Text>
-          <Text as="p">Tel: 027 222 6242</Text>
-          <Text as="p">Email: greatlakebigband@gmail.com</Text>
+          <Text as="p">
+            <strong>Tel:</strong> 027 222 6242
+          </Text>
+          <Text as="p">
+            <strong>Email:</strong> greatlakebigband@gmail.com
+          </Text>
         </Container>
       </Box>
       <Box my={[4, 10]} id="contact">
