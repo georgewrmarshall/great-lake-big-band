@@ -9,6 +9,9 @@ import {
   UnorderedList,
   ListItem,
   extendTheme,
+  Stack,
+  Center,
+  Image,
 } from "@chakra-ui/react";
 import { Banner, Navbar } from "../components";
 
@@ -186,11 +189,58 @@ const IndexPage = () => {
       </Box>
       <Box my={[4, 10]} id="contact">
         <Container maxW="container.sm">
-          <StaticImage
-            alt="Logo"
-            src="../images/Shirt-Logo.jpg"
-            formats={["auto", "webp", "avif"]}
-          />
+          <Text as="h2" fontSize={["2xl", "4xl"]} fontWeight="bold" mb={4}>
+            Affiliates
+          </Text>
+          <Link
+            href="https://www.facebook.com/TaupoConcertBand/"
+            target="_blank"
+            display="inline-flex"
+          >
+            <Box
+              maxW={"300px"}
+              w={"full"}
+              rounded={"md"}
+              p={6}
+              overflow={"hidden"}
+              border="1px solid #ccc"
+            >
+              <Box
+                h={"210px"}
+                bg={"gray.100"}
+                mt={-6}
+                mx={-6}
+                mb={6}
+                pos={"relative"}
+                overflow="hidden"
+                display="flex"
+                alignItems="center"
+              >
+                <StaticImage
+                  alt="Taupo Concert Band"
+                  src="../images/taupo-concert-band-logo.png"
+                  layout="constrained"
+                />
+              </Box>
+              <Stack>
+                <Text as="p">Taupo Concert Band</Text>
+              </Stack>
+            </Box>
+          </Link>
+        </Container>
+      </Box>
+      <Box py={[10]} borderTop="1px solid #ccc">
+        <Container maxW="container.sm">
+          <Box display="flex" justifyContent="center">
+            <div>
+              <StaticImage
+                alt="Logo"
+                src="../images/Shirt-Logo.jpg"
+                formats={["auto", "webp", "avif"]}
+                width="160px"
+              />
+            </div>
+          </Box>
         </Container>
       </Box>
     </ChakraProvider>
