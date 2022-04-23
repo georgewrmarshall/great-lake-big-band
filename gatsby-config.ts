@@ -1,6 +1,7 @@
 import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
+  pathPrefix: "/great-lake-big-band",
   siteMetadata: {
     title: `Great Lake Big Band`,
     siteUrl: `https://www.yourdomain.tld`,

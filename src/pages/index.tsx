@@ -8,13 +8,25 @@ import {
   Box,
   UnorderedList,
   ListItem,
+  extendTheme,
 } from "@chakra-ui/react";
 import { Banner, Navbar } from "../components";
+
+const customTheme = extendTheme({
+  semanticTokens: {
+    colors: {
+      text: {
+        default: "gray.900",
+        _dark: "gray.50",
+      },
+    },
+  },
+});
 
 // markup
 const IndexPage = () => {
   return (
-    <ChakraProvider>
+    <ChakraProvider theme={customTheme}>
       <Navbar />
       <Banner>
         <Container
@@ -78,7 +90,7 @@ const IndexPage = () => {
           <StaticImage
             layout="fullWidth"
             alt="GLBB Kiwanis gig band and dancers side on"
-            src="../images/GLBB Kiwanis gig band and dancers side on.jpeg"
+            src="../images/GLBB-Kiwanis-gig-band-and-dancers-side-on.jpeg"
             formats={["auto", "webp", "avif"]}
           />
           <Text as="p" mb={4} mt={4}>
@@ -154,7 +166,7 @@ const IndexPage = () => {
           <StaticImage
             layout="fullWidth"
             alt="GLBB whole band"
-            src="../images/GLBB whole band1.JPG"
+            src="../images/GLBB-whole-band1.JPG"
             formats={["auto", "webp", "avif"]}
           />
         </Container>
@@ -176,7 +188,7 @@ const IndexPage = () => {
         <Container maxW="container.sm">
           <StaticImage
             alt="Logo"
-            src="../images/Shirt Logo.jpg"
+            src="../images/Shirt-Logo.jpg"
             formats={["auto", "webp", "avif"]}
           />
         </Container>
