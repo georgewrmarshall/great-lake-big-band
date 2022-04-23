@@ -138,16 +138,37 @@ const IndexPage = () => {
           <Text mt={4} mb={4} fontSize="lg" fontWeight="bold">
             Typically the line-up of the GLBB includes:
           </Text>
-          <UnorderedList mb={4} display="grid" gridTemplateColumns="1fr 1fr">
-            <ListItem fontSize="lg">🎺 4x trumpets</ListItem>
-            <ListItem fontSize="lg">🎸 1x bass guitar</ListItem>
-            <ListItem fontSize="lg">🎺 2x trombones</ListItem>
-            <ListItem fontSize="lg">🎸 1x electric guitar</ListItem>
-            <ListItem fontSize="lg">🎷 4x saxes</ListItem>
-            <ListItem fontSize="lg">🥁 1x drums</ListItem>
-            <ListItem fontSize="lg">🎹 1x keyboard</ListItem>
-            <ListItem fontSize="lg">🎤 1x vocals (female)</ListItem>
-          </UnorderedList>
+
+          <Box display={["block", "grid"]} gridTemplateColumns="1fr 1fr" mb={4}>
+            <UnorderedList>
+              <ListItem fontSize="lg" mb={2}>
+                🎺 4x trumpets
+              </ListItem>
+              <ListItem fontSize="lg" mb={2}>
+                🎺 2x trombones
+              </ListItem>
+              <ListItem fontSize="lg" mb={2}>
+                🎷 4x saxes
+              </ListItem>
+              <ListItem fontSize="lg" mb={2}>
+                🎹 1x keyboard
+              </ListItem>
+            </UnorderedList>
+            <UnorderedList>
+              <ListItem fontSize="lg" mb={2}>
+                🎸 1x bass guitar
+              </ListItem>
+              <ListItem fontSize="lg" mb={2}>
+                🎸 1x electric guitar
+              </ListItem>
+              <ListItem fontSize="lg" mb={2}>
+                🥁 1x drums
+              </ListItem>
+              <ListItem fontSize="lg" mb={2}>
+                🎤 1x vocals (female)
+              </ListItem>
+            </UnorderedList>
+          </Box>
         </Container>
       </Box>
       <Box my={[4, 10]} id="arrangers-composers">
