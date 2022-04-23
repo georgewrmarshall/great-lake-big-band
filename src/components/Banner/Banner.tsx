@@ -21,7 +21,7 @@ export const Banner = ({ children, ...props }: BannerProps) => (
       <Box
         width="100%"
         height="100%"
-        backgroundColor={"rgba(0,0,0,.6)"}
+        backgroundColor={"rgba(0,0,0,.75)"}
         position="relative"
         gridArea="1/1"
       />

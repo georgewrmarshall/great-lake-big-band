@@ -4,7 +4,7 @@ const config: GatsbyConfig = {
   pathPrefix: "/great-lake-big-band",
   siteMetadata: {
     title: `Great Lake Big Band`,
-    siteUrl: `tps://georgewrmarshall.github.io/great-lake-big-band/`,
+    siteUrl: `https://georgewrmarshall.github.io/great-lake-big-band`,
   },
   plugins: [
     "gatsby-plugin-image",
