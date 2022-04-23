@@ -135,7 +135,7 @@ const IndexPage = () => {
           <Text as="h2" fontSize={["2xl", "4xl"]} fontWeight="bold">
             Arrangers/Composers
           </Text>
-          <Text as="p">
+          <Text as="p" mb={4}>
             Benny Goodman, Glenn Miller, Gordon Goodwin, Tom Kubis, Dave Wolpe,
             Sammy Nestico, Paul Jennings, Barry Clewett, Jerry Nowak…
           </Text>

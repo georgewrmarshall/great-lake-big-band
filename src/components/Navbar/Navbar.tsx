@@ -43,6 +43,7 @@ export const Navbar = () => {
           <Text
             textAlign={useBreakpointValue({ base: "left", md: "left" })}
             fontFamily={"heading"}
+            fontWeight="bold"
             color={useColorModeValue("gray.800", "white")}
           >
             GLBB
